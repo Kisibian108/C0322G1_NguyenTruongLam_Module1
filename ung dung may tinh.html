@@ -12,22 +12,50 @@
         <td ><input type="number" id="o2"></td>
     </tr>
     <tr>
-        <td><button onclick="cong()">Addition(+)</button></td>
-        <td><button onclick="tru()">Subtraction(-)</button></td>
-        <td><button onclick="nhan()">Multiplication(X)</button></td>
-        <td><button onclick="chia()">Division(/)</button></td>
+        <td><button onclick="cong()" value="Add">Addition(+)</button></td>
+        <td><button onclick="tru()" value="Sub">Subtraction(-)</button></td>
+        <td><button onclick="nhan()" value="Mul">Multiplication(X)</button></td>
+        <td><button onclick="chia()" value="Div">Division(/)</button></td>
     </tr>
     <td>Result</td>
     <td id = "kq"> </td>
 </table>
 <script>
     function cong() {
-    let a = document.getElementById("o1").innerHTML;
-    let b = document.getElementById("o2").innerHTML;
-    let c = document.getElementById()
-            document.getElementById("kq").innerHTML = c ;
+    let a = document.getElementById("o1").value;
+    let b = document.getElementById("o2").value;
+    a = parseInt(a);
+    b = parseInt(b);
+    ketQua = a + b;
+            document.getElementById("kq").innerHTML = ketQua ;
     }
 
+    function tru() {
+        let c = document.getElementById("o1").value;
+        let d = document.getElementById("o2").value;
+        c = parseInt(c);
+        d = parseInt(d);
+        e = c - d;
+        document.getElementById("kq").innerHTML = e;
+    }
+
+    function nhan() {
+        let f = document.getElementById("o1").value;
+        let g = document.getElementById("o2").value;
+        f = parseInt(f);
+        g = parseInt(g);
+        h = f * g;
+        document.getElementById("kq").innerHTML = h ;
+    }
+
+    function chia() {
+        let i = document.getElementById("o1").value;
+        let k = document.getElementById("o2").value;
+        i = parseInt(i);
+        k = parseInt(k);
+        l = i / k ;
+        document.getElementById("kq").innerHTML = l;
+    }
 
 
 </script>
