@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien</title>
+</head>
+<body>
+<table >
+    <style>
+        td{
+            width:500px;
+            text-align: center;
+        }
+    </style>
+    <tr>
+        <td>Amount</td>
+        <td></td>
+        <td>From Currency</td>
+        <td></td>
+        <td>To Currency</td>
+    </tr>
+    <tr>
+        <td>
+
+        <input type="number" id="chuyentien1" >
+
+        </td>
+        <td>
+            <td>
+
+        <select id="from">
+            <option value="vietnam">Viet Nam</option>
+            <option value="USD">USD</option>
+        </select>
+
+        </td>
+        <td></td>
+        <td>
+
+        <select id="to">
+            <option value="USD">USD</option>
+            <option value="vietnam">Viet Nam</option>
+        </select>
+
+        </td>
+        <td></td>
+        <td>
+    <button type=button onclick="Chuyentien()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Result:</td>
+        <td id="kq"></td>
+    </tr>
+
+</table>
+<script>
+    let tongSoTien;
+    function Chuyentien(){
+        let c = document.getElementById("chuyentien1").value;
+        let a = document.getElementById("from").value;
+        let b = document.getElementById("to").value;
+        if (a === "vietnam" && b === "USD") {
+            let e =  document.getElementById("chuyentien1").value;
+            document.getElementById("kq").innerHTML = e * 23000;
+        }
+    }
+
+</script>
+</body>
+</html>
