@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nam nhuan 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap vao so nam"));
+    if (a%4===0) {
+        if (a % 100 === 0) {
+            if (a % 400 === 0) {
+                alert("day  la nam nhuan");
+            } else {
+                alert("day ko la nam nhuan");
+            }
+        } else {
+            alert("day la nam nhuan");
+        }
+    }else{alert("day ko la nam nhuan");
+    }
+</script>
+</body>
+</html>
