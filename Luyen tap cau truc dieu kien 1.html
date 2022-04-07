@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyentapcautrucdieukien1</title>
+</head>
+<body>
+<script>
+    //bai1
+    let a = parseInt(prompt("Nhap vao so a"));
+    let b = parseInt(prompt("Nhap vao so b"));
+    if(a%b===0){
+        alert("a chia het cho b");
+    }else {
+        alert("a ko chia het cho b");
+    }
+    //bai2
+    let c = parseInt(prompt("nhap so tuoi"));
+    if(c<15){
+        alert("ko du tuoi vao lop 10");
+    }else{
+        alert("du tuoi vao lop 10");
+    }
+    //bai 3
+    let d = parseInt(prompt("nhap vao so nguyen"));
+    if(d>0){
+        alert("so nhap vao lon hon 0");
+    }else{
+        alert("so nhap vao nho hon 0");
+    }
+    //bai 4
+    let e = parseInt(prompt("nhap so thu nhat"));
+    let h = parseInt(prompt("nhap so thu hai"));
+    let i = parseInt(prompt("nhap so thu ba"));
+    if(e>h && h>e){
+    document.write("e la so lon nhat");
+    }else if(h>e && e>i){
+        document.write("h la so lon nhat");
+    }else {
+        document.write("i la so lon nhat");
+    }
+    //bai 5
+    let l = parseInt(prompt("nhap diem kiem tra"));
+    let m = parseInt(prompt("nhap diem giua ky"));
+    let n = parseInt(prompt("nhap diem cuoi ky"));
+    let p = (l + m+ n)/3;
+    if(p>=9){
+        document.write("xuat sac");
+    }else if(p>=7){
+        document.write("kha");
+    }else if(p>=6){
+        document.write("trung binh");
+    }else{
+        document.write("yeu");
+    }
+
+    //bai 6
+    let x = doanhSoBanHang;
+    if(x>20000000){
+        document.write("hoa hong la 2000000");
+    }else if(10000<x){
+        document.write("hoa hong la 1000000");
+    }else {
+        document.write("hoa hong la 500000");
+    }
+    //bai 7
+    let y = "so phut goi";
+    if(20<y){
+        document.write("cuoc dien thoai la 20k");
+    }else if(y>10){
+        document.write("cuoc dien thoai la 10k");
+    }else {
+        document.write("cuoc dien thoai la free");
+    }
+</script>
+</body>
+</html>
