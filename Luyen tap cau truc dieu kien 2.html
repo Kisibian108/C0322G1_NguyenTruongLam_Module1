@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap cau truc dieu kien 2</title>
+</head>
+<body>
+<script>
+//bai 1
+let a = parseInt(prompt("do C"));
+ b = 9/5*a + 32;
+ document.write(b);
+
+ //bai 2
+let m =parseInt(prompt("nhap vao met"));
+ft = m * 3.2808;
+document.write(ft);
+
+//bai 3
+let c = parseInt(prompt("nhap canh a"));
+let d = a * a;
+alert(d);
+
+//bai 4
+let n = parseInt(prompt("nhap chieu dai"));
+let r = parseInt(prompt("nhap chieu rong"));
+let kq = n*r;
+alert(kq);
+
+//bai 5
+let h = parseInt(prompt("chieu cao"));
+let day = parseInt(prompt("canh day"));
+let dienTich = 1/2 * h * day;
+alert(dienTich);
+
+//bai 6 giai phuong trinh bac 1
+    let a = parseInt(prompt("nhap a"));
+    let b = parseInt(prompt("nhap b"));
+    let x = -b/a;
+    alert(x);
+
+//bai 7 giai phuong trinh bac 2 ax2 + bx + c = 0;
+
+    let delta = b*b - 4*a*c
+    if(delta < 0){
+        document.write("phuong trinh vo nghiem");
+    } else if( delta===0){
+        x = -b/2*a;
+    }else{
+        x1= (-b+ math.sqrt(2))/2*a;
+        x2= (-b- math.sqrt(2))/2*a;
+    }
+
+// bai 8 kiem tra tuoi cua mot nguoi
+    let a = parseInt(prompt("nhap tuoi"))
+    if (a>0 && a<120){
+        document.write("day la tuoi cua mot nguoi")
+    }else {
+        document.write("day ko phai la tuoi cua mot nguoi")
+    }
+
+// bai 9 kiem tra 3 so nhap vao co phai la canh cua tam giac
+
+    let a = parseFloat(prompt("nhap canh a"));
+    let b = parseFloat(prompt("nhap canh b"));
+    let c = parseFloat(prompt("nhap canh c"));
+    if (a+b>c && b+c>a && a+c> b){
+        alert("day la 3 canh cua tam giac");
+    }else {
+        alert("day ko la 3 canh cua tam giac");
+    }
+
+// bai 10 viet chuong trinh tinh gia dien
+
+    let a = parseInt(prompt("nhap so dien"));
+    const GIADIEN = 3000;
+    b = a * 3000
+    alert(b);
+
+// bai 11 viet chuong trinh tinh thue thu nhap ca nhan
+    let a = parseInt(prompt("nhap thu nhap"));
+    b = thueSuat;
+    if(a>80000000){
+        b= a*0.35;
+    }else if(a> 52000000){
+        b=a*0.3;
+    }else if(a> 32000000){
+        b=a*0.25;
+    }else if(a>18000000){
+        b=a*0.2;
+    }else if(a>10000000){
+        b=a*0.15;
+    }else if(a>5000000){
+        b=a*0.1;
+    }else{
+        b=a*0.05;
+    }
+
+    // chuong trinh tinh lai ngan hang, lai me de lai con
+    let a = parseInt(prompt("nhap so tien ban dau"));
+    let n = parseInt(prompt("so thang cho vay"));
+    let b = parseInt(prompt("lai suat hang thang"));
+    d = a * math.pow((1+b),n)
+    alert(d);
+
+
+</script>
+</body>
+</html>
