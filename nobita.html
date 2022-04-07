@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notbia</title>
+</head>
+<body onLoad="docReady()">
+<script>
+
+    <img id="nobita" src="https://3.bp.blogspot.com/-r414LnKvYTg/VnA62s68G0I/AAAAAAAAAdw/OubyVCt98Hk/s1600/anh-dep-ve-mua-xuan.jpg" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+    function upArrowPressed() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function downArrowPressed() {
+        var element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function leftArrowPressed() {
+        var element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    function rightArrowPressed() {
+        var element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady(evt) {
+        window.addEventListener('keydown', moveSelection);
+    }
+</script>
+</body>
+</html>
