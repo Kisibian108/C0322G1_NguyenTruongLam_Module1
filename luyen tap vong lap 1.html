@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen tap</title>
+</head>
+<body>
+<script>
+    // bai 1
+    // let i = 1;
+    // for(i;i<100;i++){
+    //     document.write(i + '<br>');
+    // }
+    // alert("da hoan thanh");
+
+    // bai 2
+    // let a = parseInt(prompt("Nhap vao nhiet do"));
+    //         if (a < 20) {
+    //             alert("Hay tang nhiet do");
+    //         }else if(a>100){
+    //             alert("Hay giam nhiet do");
+    //         }else {
+    //             alert("Nhiet do OK");
+    //     }
+    // bai 3 hien thi ra 20 so trong day fibonaci dau tien
+    // let n1 = 0, n2 = 1, nextTerm;
+    // document.write(0 + '<br>');
+    // document.write(1 + '<br>');
+    // for (let i = 1; i <= 18; i++) {
+    //     nextTerm = n1 + n2;
+    //     n1 = n2;
+    //     n2 = nextTerm;
+    //     document.write(nextTerm + '<br>' );
+    // }
+
+    // bai 4
+    let n1 = 0, n2 = 1, nextTerm;
+    for (let i = 1; i <= 100; i++) {
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        if(nextTerm%5===0){
+            break;
+    }   document.write(nextTerm);
+    }
+
+
+</script>
+</body>
+</html>
