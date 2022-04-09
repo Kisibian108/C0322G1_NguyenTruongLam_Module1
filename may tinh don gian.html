@@ -31,7 +31,7 @@
             <td><button type="button" onclick="calBasic('7')">7</button></td>
             <td><button type="button" onclick="calBasic('8')">8</button></td>
             <td><button type="button" onclick="calBasic('9')">9</button></td>
-            <td><button type="button" onclick="calBasic('x')">x</button></td>
+            <td><button type="button" onclick="calBasic('*')">x</button></td>
         </tr>
         <tr>
             <td><button type="button" onclick="calBasic('C')">C</button></td>
@@ -40,7 +40,39 @@
             <td><button type="button" onclick="calBasic('/')">/</button></td>
         </tr>
     </table>
-
+            <script>
+                function calBasic(operator){
+                    let result = document.getElementById("result").innerText;
+                    switch (operator){
+                        case '0':
+                        case '1':
+                        case '2':
+                        case '3':
+                        case '4':
+                        case '5':
+                        case '6':
+                        case '7':
+                        case '8':
+                        case '9':
+                        case '+':
+                        case '-':
+                            result = result + operator ;
+                            break;
+                        case '*':
+                        case '/':
+                            if (result.length != 0){
+                                result = result + operator;
+                            }
+                            break;
+                        case 'C':
+                            result = null;
+                            break;
+                        case '=':
+                            result=eval(result);
+                    }
+                    document.getElementById('result').innerText= result;
+                }
+            </script>
 
 </body>
 </html>
