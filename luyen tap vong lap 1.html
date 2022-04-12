@@ -6,43 +6,81 @@
 </head>
 <body>
 <script>
-    // bai 1
-    // let i = 1;
-    // for(i;i<100;i++){
-    //     document.write(i + '<br>');
-    // }
-    // alert("da hoan thanh");
+    bai 1
+    let i = 1;
+    for(i;i<100;i++){
+        document.write(i + '<br>');
+    }
+    alert("da hoan thanh");
 
-    // bai 2
-    // let a = parseInt(prompt("Nhap vao nhiet do"));
-    //         if (a < 20) {
-    //             alert("Hay tang nhiet do");
-    //         }else if(a>100){
-    //             alert("Hay giam nhiet do");
-    //         }else {
-    //             alert("Nhiet do OK");
-    //     }
-    // bai 3 hien thi ra 20 so trong day fibonaci dau tien
-    // let n1 = 0, n2 = 1, nextTerm;
-    // document.write(0 + '<br>');
-    // document.write(1 + '<br>');
-    // for (let i = 1; i <= 18; i++) {
-    //     nextTerm = n1 + n2;
-    //     n1 = n2;
-    //     n2 = nextTerm;
-    //     document.write(nextTerm + '<br>' );
-    // }
-
-    // bai 4
+    bai 2
+    let a = parseInt(prompt("Nhap vao nhiet do"));
+            if (a < 20) {
+                alert("Hay tang nhiet do");
+            }else if(a>100){
+                alert("Hay giam nhiet do");
+            }else {
+                alert("Nhiet do OK");
+        }
+    bai 3 hien thi ra 20 so trong day fibonaci dau tien
     let n1 = 0, n2 = 1, nextTerm;
-    for (let i = 1; i <= 100; i++) {
+    document.write(0 + '<br>');
+    document.write(1 + '<br>');
+    for (let i = 1; i <= 18; i++) {
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        document.write(nextTerm + '<br>' );
+    }
+
+    bai 4 //
+    let n1 = 0, n2 = 1, nextTerm;
+    for (let i = 1; i <= 5; i++) {
         nextTerm = n1 + n2;
         n1 = n2;
         n2 = nextTerm;
         if(nextTerm%5===0){
-            break;
-    }   document.write(nextTerm);
+            document.write(nextTerm);
+        }
     }
+
+    bai 5
+    let n1 = 0, n2 = 1, nextTerm; let sum = 1;
+    document.write(0 + '<br>');
+    document.write(1 + '<br>');
+    for (let i = 1; i <= 18; i++) {
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        sum = sum +nextTerm;
+        document.write(nextTerm + '<br>' );
+    }
+    document.write(sum);
+
+    bai 6 tinh tong cua 30 so chia het cho 7 dau tien trong cac so tu nhien
+
+        let sum = 0;
+        let i=7;
+        for(i;i<215;i++){
+            if(i%7===0){
+                document.write(i + '<br>');
+                sum = sum + i;
+            }
+        }document.write(sum);
+
+    bai 7  Hãy viết một chương trình in ra các số từ 1 đến 100.
+    Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó.
+    Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+
+        let i =1;
+        for(i;i<=100;i++){
+            if(i%3===0) {
+
+            }else if(i%5===0){
+
+            }
+        } document.write(i + '<br>');
+
 
 
 </script>
