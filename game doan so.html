@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game doan so</title>
+</head>
+<body>
+    <button onclick="nhapvao()" id="nhapvaoso">Choi</button>
+    <script>
+        function nhapvao(){
+            let input = parseInt(prompt("Muon doan trong khoang nao"));
+            let giaTri = document.getElementById("nhapvaoso").value;
+            let a = Math.floor(Math.random()*input);
+            document.write(a);
+            let doan = parseInt(prompt("Nhap vao so nguoi dung doan"))
+            if(doan===a){
+                alert("Chuc mung");
+            }else if(doan>a){
+                alert("So nhap vao lon hon");
+            }else{
+                alert("So nhap vao nho hon");
+        }
+
+        }
+
+
+    </script>
+</body>
+</html>

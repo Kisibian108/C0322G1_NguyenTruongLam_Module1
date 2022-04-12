@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tao va thao tac vs mang</title>
+</head>
+<body>
+<h3>Sample Screen:</h3>
+<input type="text" id="myID" value>
+<button onclick="layGiaTri()" >Add</button>
+<button>Display</button>
+<hr>
+<div id="result"></div>
+<script>
+    function layGiaTri(){
+       let result = document.getElementById("myID").value;
+       document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
