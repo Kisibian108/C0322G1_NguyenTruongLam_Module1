@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="myID"  >
+<button onclick="timkiem()">Tim kiem</button>
+<div id="result"></div>
+<script>
+    let tiengAnh = ["Book","Football","Music","Love"];
+    let tiengViet = ["Sách","Bóng đá","Nghe nhạc","Tình yêu"];
+
+    function timkiem(){
+        let input = document.getElementById("myID").value;
+            var kq = document.getElementById("result").innerHTML;
+            let i=0;
+                for(i;i<=3;i++) {
+                    if (input === tiengAnh[i]) {
+                        document.write(tiengViet[i]);
+                    }
+                }
+    }
+
+
+
+
+</script>
+</body>
+</html>
