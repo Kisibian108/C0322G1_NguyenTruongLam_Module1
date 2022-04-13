@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hinh tam giac can</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("Nhap chieu cao vao"));
+    for(i=1;i<=n;i++){
+        for(j=i;j<=n;j++){
+            document.write("&nbsp&nbsp");
+        }
+        for(j=1;j<i;j++){
+            document.write("*");
+        }
+        for(j=1;j<=i;j++){
+            document.write("*");
+        }document.write("<br>");
+    }
+</script>
+</body>
+</html>
