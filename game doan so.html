@@ -7,20 +7,21 @@
 <body>
     <button onclick="nhapvao()" id="nhapvaoso">Choi</button>
     <script>
-        function nhapvao(){
+        function nhapvao() {
             let input = parseInt(prompt("Muon doan trong khoang nao"));
             let giaTri = document.getElementById("nhapvaoso").value;
-            let a = Math.floor(Math.random()*input);
+            let a = Math.floor(Math.random() * input);
             document.write(a);
+            for (i = 1; i <= 3; i++) {
             let doan = parseInt(prompt("Nhap vao so nguoi dung doan"))
-            if(doan===a){
-                alert("Chuc mung");
-            }else if(doan>a){
-                alert("So nhap vao lon hon");
-            }else{
-                alert("So nhap vao nho hon");
-        }
-
+                if (doan === a) {
+                    alert("Chuc mung");
+                } else if (doan > a) {
+                    alert("So nhap vao lon hon");
+                } else {
+                    alert("So nhap vao nho hon");
+                }
+            }
         }
 
 
