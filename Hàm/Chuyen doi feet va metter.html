@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi feet va meters</title>
+</head>
+<body>
+<p>Foot to Meter</p>
+<input type="number" id="myID" placeholder="Foot">
+<button type="button" onclick="footToMeter()" onchange="footToMeter()">Change</button>
+<p>Meter:<span id="result"></span></p>
+<script>
+
+    function footToMeter(foot){
+    let input = document.getElementById("myID").value;
+    let result = document.getElementById("result").innerHTML= input *0.305;
+
+
+
+    }
+
+</script>
+<p>Meter to Foot</p>
+<input type="number" id="myID1" placeholder="Meter">
+<button type="button" onclick="meterToFoot()" onchange="meterToFoot()">Change</button>
+<p>Foot:<span id="result1"></span></p>
+<script>
+    function meterToFoot(meter){
+        let input = document.getElementById("myID1").value;
+        let result = document.getElementById("result1").innerHTML= input *3.279;
+    }
+</script>
+
+
+</body>
+</html>
