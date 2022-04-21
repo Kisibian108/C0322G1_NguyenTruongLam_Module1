@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và gọi hàm</title>
+</head>
+<body>
+
+<!--    // function processConfirm(answer) {-->
+<!--    //     let result = "";-->
+<!--    //     if (answer) {-->
+<!--    //         result = "Excellent. We'll play a nice game of chess.";-->
+<!--    //     } else {-->
+<!--    //         result = "Maybe later then.";-->
+<!--    //     }-->
+<!--    //     return result;-->
+<!--    //-->
+<!--    // }-->
+<!--    // let confirmAnswer = confirm("Shall we play a game?");-->
+<!--    // let theAnswer = processConfirm(confirmAnswer);-->
+<!--    // alert(theAnswer);-->
+<!--    <p>-->
+<!--        <label>Fahrenheit</label>-->
+<!--        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"-->
+<!--               onInput="temperatureConverter(this.value)"-->
+<!--               onChange="temperatureConverter(this.value)"/>-->
+<!--    </p>-->
+<!--    <p>Celsius: <span id="outputCelsius"></span></p>-->
+<!--    <script>-->
+<!--    function temperatureConverter(valNum) {-->
+<!--        valNum = parseFloat(valNum);-->
+<!--        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;-->
+<!--    }-->
+<script>
+
+function minArray(arr) {
+    let min = arr[0];
+    for(var i = 1; i < arr.length; i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    let min = minArray(arr1);
+    alert(min);
+</script>
+</body>
+</html>
